@@ -18,7 +18,7 @@ if upload_file is not None:
 
     df = pd.read_csv(upload_file)       #reads the csv file
 
-    date = df.columns[0]       #gets the first column
+    date = df.columns[0]       #gets the date from the first column
     price = df.columns[1]      #gets the price from the second column
 
 #-----------Sorts_by_date--------------
