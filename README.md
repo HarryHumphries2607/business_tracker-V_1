@@ -36,7 +36,3 @@ Open your terminal (or Command Prompt) and run these three lines:
    ```bash
    streamlit run app.py
    ```
-
-# Screenshot
-
-![preview](image-1.png)
