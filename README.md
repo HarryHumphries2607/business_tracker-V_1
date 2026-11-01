@@ -1,5 +1,5 @@
 # 📈 business_tracker(V_1)
-This is a clean web tool to help visualise stock prices
+This is a clean web tool to help visualize stock prices
 
 ## Features
 *Upload standard stock history CSV files
