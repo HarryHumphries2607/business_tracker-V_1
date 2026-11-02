@@ -22,7 +22,7 @@ if upload_file is not None:
     price = df.columns[1]      #gets the price from the second column
 
 #-----------Sorts_by_date--------------
-    df[date] = pd.to_datetime(df[date], format='%d/%m/%Y')
+    df[date] = pd.to_datetime(df[date], format='mix', errors='coerce')
     df = df.sort_values(by=date).reset_index(drop=True)
     df[date] = df[date].dt.strftime('%d/%m/%Y')
 #--------------------------------------
