@@ -24,7 +24,7 @@ if upload_file is not None:
 #-----------Sorts_by_date--------------
     df[date] = pd.to_datetime(df[date], format='mix', errors='coerce')
     df = df.sort_values(by=date).reset_index(drop=True)
-    df[date] = df[date].dt.strftime('%d/%m/%Y')
+    df[date] = df[date].dt.strftime('mix')
 #--------------------------------------
 
 #-----------creates_line_graph------------
