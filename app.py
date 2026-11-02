@@ -34,7 +34,7 @@ if upload_file is not None:
 #-----------------------------------------
 
 #----------graph_fits_page----------------
-    fig.update_xaxes(type="catagory", categoryorder='trace',tickangle=-45)
+    fig.update_xaxes(type="category", categoryorder='trace',tickangle=-45)
     
     st.plotly_chart(fig, use_container_width=True)
 #-----------------------------------------
