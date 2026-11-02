@@ -32,7 +32,7 @@ if upload_file is not None:
 #-----------------------------------------
 
 #----------graph_fits_page----------------
-    fig.update_xaxes(dtick="M1", tickformat="%d%m%Y")
+    fig.update_xaxes(type="date", tickformat="%d/%m/%Y", dtick="M1")
     
     st.plotly_chart(fig, use_container_width=True)
 #-----------------------------------------
