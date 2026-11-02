@@ -25,7 +25,6 @@ if upload_file is not None:
     df[date] = pd.to_datetime(df[date], format='mixed', errors='coerce')
     df = df.dropna(subset=[date])
     df = df.sort_values(by=date).reset_index(drop=True)
-    df[date] = df[date].dt.strftime('%d%m%Y')
 #--------------------------------------
 
 #-----------creates_line_graph------------
@@ -33,6 +32,8 @@ if upload_file is not None:
 #-----------------------------------------
 
 #----------graph_fits_page----------------
+    fig.update_xaxes(dtick="M1", tickformat="%d%m%Y")
+    
     st.plotly_chart(fig, use_container_width=True)
 #-----------------------------------------
 else:
